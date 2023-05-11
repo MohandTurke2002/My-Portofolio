@@ -1,0 +1,25 @@
+.landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  .landing-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0 30px;
+    .image {
+      border-radius: 10px;
+      height: 302px;
+      width: 302px;
+      img {
+        width: 300px;
+        border-radius: 10px;
+      }
+    }
+    .text {
+      width: fit-content;
+    }
+  }
+}
