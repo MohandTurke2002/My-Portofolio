@@ -10,6 +10,7 @@
     position: absolute;
     transition: 0.3s linear;
     left: -155px;
+    z-index: 9999;
     &.show-colors {
       left: 0;
     }

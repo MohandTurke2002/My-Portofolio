@@ -8,6 +8,7 @@
 :root {
   --body-theme-dark: #0f0e0e;
   --back-ground-div-dark: #333;
+  --color-icons: #555;
   --text-color-dark: #eee;
   --body-theme-light: #eee;
   --text-color-light: #333;
@@ -19,6 +20,19 @@ body {
   background-color: var(--body-theme-dark);
   color: var(--text-color-dark);
   transition: 0.3s linear;
+  .button-settings,
+  .button-theme {
+    button {
+      background-color: var(--text-color-dark);
+      i {
+        color: var(--color-icons);
+      }
+    }
+  }
+  .popup-content {
+    background-color: var(--body-theme-dark);
+    color: var(--text-color-dark);
+  }
 }
 
 #root {
@@ -35,11 +49,34 @@ body {
   .wrap {
     background-color: var(--back-ground-div-light);
   }
+  .button-settings,
+  .button-theme {
+    button {
+      background-color: var(--back-ground-div-light);
+      i {
+        color: var(--text-color-dark);
+      }
+    }
+  }
+  .popup-content {
+    background-color: var(--back-ground-div-light);
+    color: var(--text-color-light);
+  }
+}
+
+.special-title {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 50px;
 }
 
 .theme-movblue {
   .change-color {
     color: #3a1078;
+  }
+
+  .change-backgr {
+    background-color: #3a1078;
   }
 
   .active {
@@ -67,6 +104,10 @@ body {
     color: #cd0404;
   }
 
+  .change-backgr {
+    background-color: #cd0404;
+  }
+
   .active {
     background-color: #cd0404;
   }
@@ -90,6 +131,10 @@ body {
 .theme-blue {
   .change-color {
     color: #1d267d;
+  }
+
+  .change-backgr {
+    background-color: #1d267d;
   }
 
   .active {
@@ -117,6 +162,10 @@ body {
     color: #ff6000;
   }
 
+  .change-backgr {
+    background-color: #ff6000;
+  }
+
   .active {
     background-color: #ff6000;
   }
@@ -140,6 +189,10 @@ body {
 .theme-gold {
   .change-color {
     color: #c07f00;
+  }
+
+  .change-backgr {
+    background-color: #c07f00;
   }
 
   .active {
@@ -167,6 +220,10 @@ body {
     color: #379237;
   }
 
+  .change-backgr {
+    background-color: #379237;
+  }
+
   .active {
     background-color: #379237;
   }
@@ -192,6 +249,10 @@ body {
     color: #ff55bb;
   }
 
+  .change-backgr {
+    background-color: #ff55bb;
+  }
+
   .active {
     background-color: #ff55bb;
   }
@@ -215,6 +276,10 @@ body {
 .theme-purple {
   .change-color {
     color: #77037b;
+  }
+
+  .change-backgr {
+    background-color: #77037b;
   }
 
   .active {

@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: absolute;
+  right: 0;
   .link-wrap {
     display: flex;
     background-color: var(--back-ground-div-dark);
