@@ -1,17 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  currentTheme: "dark",
-}
+  colorTheme: "theme-gold",
+};
 
 export const themeSlice = createSlice({
-  name: 'currentTheme',
+  name: "currentTheme",
   initialState,
   reducers: {
+    changeTheme: (state, action) => {
+      state.colorTheme = action.payload;
+    },
   },
-})
+});
 
 // Action creators are generated for each case reducer function
-// export const {  } = counterSlice.actions
+export const { changeTheme } = themeSlice.actions;
 
-export default themeSlice.reducer
+export default themeSlice.reducer;

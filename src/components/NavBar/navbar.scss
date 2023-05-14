@@ -3,10 +3,10 @@
   width: 128px;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   .link-wrap {
     display: flex;
-    background-color: black;
+    background-color: var(--back-ground-div-dark);
     padding: 10px 12px;
     border-radius: 50px;
     color: white;
@@ -15,12 +15,10 @@
     align-items: center;
     margin-bottom: 15px;
     text-decoration: none;
+    transition: 0.3s linear;
     &:hover p {
       width: 79px;
       margin-right: 5px;
-    }
-    &.active {
-      background-color: red;
     }
     p {
       width: 0px;

@@ -3,23 +3,100 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s linear;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 900px;
+    top: -20px;
+    left: -150px;
+    z-index: -1;
+    transform: rotateZ(-20deg);
+  }
   .landing-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex: 1;
-    padding: 0 30px;
     .image {
       border-radius: 10px;
-      height: 302px;
-      width: 302px;
-      img {
-        width: 300px;
-        border-radius: 10px;
-      }
+      height: 500px;
+      width: 400px;
+      background-image: url(../Untitled.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      top: 0px;
+      animation-name: imageupdown;
+      animation-timing-function: linear;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
     }
     .text {
-      width: fit-content;
+      width: 370px;
+      .know-more {
+        a {
+          text-decoration: none;
+          color: inherit;
+          .more {
+            display: flex;
+            column-gap: 15px;
+            width: -moz-fit-content;
+            width: fit-content;
+            padding: 5px 7px 5px 10px;
+            border: 2px solid;
+            border-radius: 50px;
+            position: relative;
+            transition: 0.3s linear;
+            margin-top: 20px;
+            > p {
+              transition: 0.3s linear;
+            }
+            > span {
+              color: white;
+            }
+            &:hover > p {
+              color: white;
+            }
+            &:hover::before {
+              width: 100%;
+              border-radius: 50px;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 20%;
+              height: 100%;
+              right: 0px;
+              top: 0;
+              border-radius: 50px;
+              z-index: -1;
+              transition: 0.3s linear;
+            }
+          }
+        }
+      }
     }
+  }
+}
+
+@keyframes imageupdown {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 30px;
+  }
+  50% {
+    top: 0px;
+  }
+  75% {
+    top: -30px;
+  }
+  100% {
+    top: 0;
   }
 }

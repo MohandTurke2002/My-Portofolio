@@ -6,14 +6,19 @@
 }
 
 :root {
-  --body-theme: #404258;
-  --back-ground-div: #6b728e;
-  --main-text: red;
-  --text-color: #eee;
+  --body-theme-dark: #0f0e0e;
+  --back-ground-div-dark: #333;
+  --text-color-dark: #eee;
+  --body-theme-light: #eee;
+  --text-color-light: #333;
+  --back-ground-div-light: #999;
 }
 
 body {
   height: 100vh;
+  background-color: var(--body-theme-dark);
+  color: var(--text-color-dark);
+  transition: 0.3s linear;
 }
 
 #root {
@@ -22,4 +27,212 @@ body {
 
 .App {
   height: 100%;
+}
+
+.light {
+  background-color: var(--body-theme-light);
+  color: var(--text-color-light);
+  .wrap {
+    background-color: var(--back-ground-div-light);
+  }
+}
+
+.theme-movblue {
+  .change-color {
+    color: #3a1078;
+  }
+
+  .active {
+    background-color: #3a1078;
+  }
+
+  .change-hover:hover {
+    background-color: #3a1078;
+  }
+
+  .change-bordercl {
+    border-color: #3a1078 !important;
+    &::before {
+      background-color: #3a1078;
+    }
+  }
+
+  .change-before::before {
+    background-color: #3a1078;
+  }
+}
+
+.theme-red {
+  .change-color {
+    color: #cd0404;
+  }
+
+  .active {
+    background-color: #cd0404;
+  }
+
+  .change-hover:hover {
+    background-color: #cd0404;
+  }
+
+  .change-bordercl {
+    border-color: #cd0404 !important;
+    &::before {
+      background-color: #cd0404;
+    }
+  }
+
+  .change-before::before {
+    background-color: #cd0404;
+  }
+}
+
+.theme-blue {
+  .change-color {
+    color: #1d267d;
+  }
+
+  .active {
+    background-color: #1d267d;
+  }
+
+  .change-hover:hover {
+    background-color: #1d267d;
+  }
+
+  .change-bordercl {
+    border-color: #1d267d !important;
+    &::before {
+      background-color: #1d267d;
+    }
+  }
+
+  .change-before::before {
+    background-color: #1d267d;
+  }
+}
+
+.theme-orange {
+  .change-color {
+    color: #ff6000;
+  }
+
+  .active {
+    background-color: #ff6000;
+  }
+
+  .change-hover:hover {
+    background-color: #ff6000;
+  }
+
+  .change-bordercl {
+    border-color: #ff6000 !important;
+    &::before {
+      background-color: #ff6000;
+    }
+  }
+
+  .change-before::before {
+    background-color: #ff6000;
+  }
+}
+
+.theme-gold {
+  .change-color {
+    color: #c07f00;
+  }
+
+  .active {
+    background-color: #c07f00;
+  }
+
+  .change-hover:hover {
+    background-color: #c07f00;
+  }
+
+  .change-bordercl {
+    border-color: #c07f00 !important;
+    &::before {
+      background-color: #c07f00;
+    }
+  }
+
+  .change-before::before {
+    background-color: #c07f00;
+  }
+}
+
+.theme-green {
+  .change-color {
+    color: #379237;
+  }
+
+  .active {
+    background-color: #379237;
+  }
+
+  .change-hover:hover {
+    background-color: #379237;
+  }
+
+  .change-bordercl {
+    border-color: #379237 !important;
+    &::before {
+      background-color: #379237;
+    }
+  }
+
+  .change-before::before {
+    background-color: #379237;
+  }
+}
+
+.theme-pink {
+  .change-color {
+    color: #ff55bb;
+  }
+
+  .active {
+    background-color: #ff55bb;
+  }
+
+  .change-hover:hover {
+    background-color: #ff55bb;
+  }
+
+  .change-bordercl {
+    border-color: #ff55bb !important;
+    &::before {
+      background-color: #ff55bb;
+    }
+  }
+
+  .change-before::before {
+    background-color: #ff55bb;
+  }
+}
+
+.theme-purple {
+  .change-color {
+    color: #77037b;
+  }
+
+  .active {
+    background-color: #77037b;
+  }
+
+  .change-hover:hover {
+    background-color: #77037b;
+  }
+
+  .change-bordercl {
+    border-color: #77037b !important;
+    &::before {
+      background-color: #77037b;
+    }
+  }
+
+  .change-before::before {
+    background-color: #77037b;
+  }
 }

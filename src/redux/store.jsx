@@ -3,7 +3,7 @@ import themeSlice from "./themeSlice/themeSlice";
 
 const store = configureStore({
   reducer: {
-    counter: themeSlice,
+    currentTheme: themeSlice,
   },
 });
 
