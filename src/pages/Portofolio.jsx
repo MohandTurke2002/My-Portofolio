@@ -17,7 +17,6 @@ import weather from "./images-portofolio/weather.png";
 import creatyourtask from "./images-portofolio/creat-your-task.png";
 import Popup from "reactjs-popup";
 import "./scss/protofolio.scss";
-import "animate.css";
 
 function Portofolio() {
   return (
