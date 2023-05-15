@@ -112,3 +112,28 @@
     opacity: 1;
   }
 }
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .image-project {
+    width: calc(50% - 20px) !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .image-project {
+    width: 100% !important;
+  }
+  .popup-content {
+    h3 {
+      font-size: 30px !important;
+    }
+    .details {
+      div {
+        width: 100% !important;
+      }
+    }
+    img {
+      width: 300px !important;
+    }
+  }
+}

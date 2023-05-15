@@ -100,3 +100,43 @@
     top: 0;
   }
 }
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .landing {
+    &::before {
+      display: none !important;
+    }
+    .landing-wrap {
+      flex-direction: column;
+      .image {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        animation: none;
+        top: -40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .landing {
+    &::before {
+      display: none !important;
+    }
+    .landing-wrap {
+      flex-direction: column;
+      .image {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        animation: none;
+        top: -70px;
+      }
+      .know-more {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
