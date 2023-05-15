@@ -33,6 +33,21 @@ body {
     background-color: var(--body-theme-dark);
     color: var(--text-color-dark);
   }
+  .my-message {
+    color: var(--back-ground-div-light);
+  }
+  .input-container {
+    input {
+      background-color: var(--back-ground-div-dark);
+      color: var(--text-color-dark);
+    }
+  }
+  .message-text {
+    textarea {
+      background-color: var(--back-ground-div-dark);
+      color: var(--text-color-dark);
+    }
+  }
 }
 
 #root {
@@ -52,7 +67,7 @@ body {
   .button-settings,
   .button-theme {
     button {
-      background-color: var(--back-ground-div-light);
+      background-color: var(--back-ground-div-dark);
       i {
         color: var(--text-color-dark);
       }
@@ -61,6 +76,21 @@ body {
   .popup-content {
     background-color: var(--back-ground-div-light);
     color: var(--text-color-light);
+  }
+  .my-message {
+    color: var(--color-icons);
+  }
+  .input-container {
+    input {
+      background-color: white;
+      color: var(--text-color-light);
+    }
+  }
+  .message-text {
+    textarea {
+      background-color: white;
+      color: var(--text-color-light);
+    }
   }
 }
 
