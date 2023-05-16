@@ -207,10 +207,13 @@
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
+        input {
+          width: 65%;
+        }
       }
     }
     .message-text {
-      width: 90% !important;
+      width: 80% !important;
     }
   }
 }
