@@ -1,0 +1,136 @@
+.about-me-section {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  .about-me {
+    flex: 1;
+    height: 100%;
+    .details-about-me {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 55px;
+      justify-content: center;
+      .container-info {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        width: auto;
+        padding: 55px;
+        border: 1px solid #333;
+        border-radius: 15px;
+        border: 1px solid;
+        h3 {
+          font-size: 35px;
+        }
+        p {
+          font-size: 25px;
+          font-weight: 600;
+          margin-left: 7px;
+        }
+      }
+    }
+    .skills {
+      display: flex;
+      padding: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      .special-title {
+        width: 100%;
+      }
+      .container-skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .wrap-skill {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img {
+          max-width: 50%;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          top: calc(-1 * var(--border-width));
+          left: calc(-1 * var(--border-width));
+          z-index: -1;
+          width: calc(100% + var(--border-width) * 2);
+          height: calc(100% + var(--border-width) * 2);
+          background: linear-gradient(
+            60deg,
+            hsl(224, 85%, 66%),
+            hsl(269, 85%, 66%),
+            hsl(314, 85%, 66%),
+            hsl(359, 85%, 66%),
+            hsl(44, 85%, 66%),
+            hsl(89, 85%, 66%),
+            hsl(134, 85%, 66%),
+            hsl(179, 85%, 66%)
+          );
+          background-size: 300% 300%;
+          background-position: 0 50%;
+          border-radius: 50%;
+          animation: moveGradient 4s alternate infinite;
+        }
+      }
+    }
+    .education {
+      .wrap-edu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        column-gap: 30px;
+        .college {
+          width: 200px;
+          img {
+            max-width: 100%;
+          }
+        }
+        .text {
+          font-size: 30px;
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-info {
+    padding: 25px !important;
+    h3 {
+      font-size: 20px !important;
+    }
+    p {
+      font-size: 15px !important;
+    }
+  }
+  .wrap-edu {
+    flex-direction: column;
+    .text {
+      text-align: center;
+      p {
+        font-size: 25px;
+        width: 250px;
+        margin: 20px auto;
+      }
+    }
+  }
+}

@@ -13,6 +13,7 @@
   --body-theme-light: #eee;
   --text-color-light: #333;
   --back-ground-div-light: #999;
+  --border-width: 3px;
 }
 
 body {
@@ -47,6 +48,13 @@ body {
       background-color: var(--back-ground-div-dark);
       color: var(--text-color-dark);
     }
+  }
+  .container-info {
+    border-color: var(--text-color-dark);
+    box-shadow: 5px 5px 20px -15px var(--text-color-dark), -5px -5px 20px -15px var(--text-color-dark);
+  }
+  .wrap-skill {
+    background-color: var(--body-theme-dark);
   }
 }
 
@@ -91,6 +99,13 @@ body {
       background-color: white;
       color: var(--text-color-light);
     }
+  }
+  .container-info {
+    border-color: var(--back-ground-div-dark);
+    box-shadow: 5px 5px 20px -15px var(--back-ground-div-dark), -5px -5px 20px -15px var(--back-ground-div-dark);
+  }
+  .wrap-skill {
+    background-color: var(--body-theme-light);
   }
 }
 
