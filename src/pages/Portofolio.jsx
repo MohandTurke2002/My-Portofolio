@@ -346,7 +346,7 @@ function Portofolio() {
                 <div className="details">
                   <div>
                     <h4>Project Type: </h4>
-                    <p>Static Web</p>
+                    <p>Dynamic Web</p>
                   </div>
                   <div>
                     <h4>Languages: </h4>
@@ -392,7 +392,7 @@ function Portofolio() {
                 <div className="details">
                   <div>
                     <h4>Project Type: </h4>
-                    <p>Static Web</p>
+                    <p>Dynamic Web</p>
                   </div>
                   <div>
                     <h4>Languages: </h4>
@@ -436,7 +436,7 @@ function Portofolio() {
                 <div className="details">
                   <div>
                     <h4>Project Type: </h4>
-                    <p>Static Web</p>
+                    <p>Dynamic Web</p>
                   </div>
                   <div>
                     <h4>Languages: </h4>
@@ -480,7 +480,7 @@ function Portofolio() {
                 <div className="details">
                   <div>
                     <h4>Project Type: </h4>
-                    <p>Static Web</p>
+                    <p>Dynamic Web</p>
                   </div>
                   <div>
                     <h4>Languages: </h4>
@@ -526,7 +526,7 @@ function Portofolio() {
                 <div className="details">
                   <div>
                     <h4>Project Type: </h4>
-                    <p>Static Web</p>
+                    <p>Dynamic Web</p>
                   </div>
                   <div>
                     <h4>Languages: </h4>
@@ -573,7 +573,7 @@ function Portofolio() {
                 <div className="details">
                   <div>
                     <h4>Project Type: </h4>
-                    <p>Static Web</p>
+                    <p>Dynamic Web</p>
                   </div>
                   <div>
                     <h4>Languages: </h4>
@@ -620,7 +620,7 @@ function Portofolio() {
                 <div className="details">
                   <div>
                     <h4>Project Type: </h4>
-                    <p>Static Web</p>
+                    <p>Dynamic Web</p>
                   </div>
                   <div>
                     <h4>Languages: </h4>
