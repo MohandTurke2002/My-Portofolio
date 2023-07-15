@@ -656,6 +656,53 @@ function Portofolio() {
               </div>
             </Popup>
           </div>
+          <div className="image-project">
+            <img src={creatyourtask} alt="creatyourtask-pr" />
+            <Popup
+              trigger={<div className="change-backgr popdet">Show Project</div>}
+              position="center center"
+            >
+              <div className="pop-container">
+                <h3 className="change-color title">Creat Your Task Project</h3>
+                <div className="details">
+                  <div>
+                    <h4>Project Type: </h4>
+                    <p>Dynamic Web</p>
+                  </div>
+                  <div>
+                    <h4>Languages: </h4>
+                    <p>SCSS,JavaScript</p>
+                  </div>
+                  <div>
+                    <h4>FrameWorks: </h4>
+                    <p>ReactJs,Firebase</p>
+                  </div>
+                  <div>
+                    <h4>Libraries: </h4>
+                    <p>whithout Libraries</p>
+                  </div>
+                  <div>
+                    <h4>Describtion: </h4>
+                    <p>
+                      this project is a Full Stack CRUD app jwt,auth and
+                      firestore
+                    </p>
+                  </div>
+                  <div>
+                    <h4>Link: </h4>
+                    <a
+                      className="change-color link"
+                      href="https://creat-ur-task.netlify.app/"
+                      target="blank"
+                    >
+                      Creat Your Task
+                    </a>
+                  </div>
+                </div>
+                <img src={creatyourtask} alt="creatyourtask-pr" />
+              </div>
+            </Popup>
+          </div>
         </div>
       </div>
       <Navbar />
