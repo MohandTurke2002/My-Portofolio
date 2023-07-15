@@ -26,7 +26,7 @@ function Landing() {
       <div className="landing-wrap">
         <div className="image"></div>
         <div className="text">
-          <h1>Hello My Friend...</h1>
+          <h1>Hello My Friend....</h1>
           <h1>My Name's Muhannad,</h1>
           <h1>
             Im a <span className="change-color" id="dynamic"></span>
